@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal Deyvid</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Pré-conexão para otimizar o carregamento de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação da fonte Roboto do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <!-- Container da barra de navegação -->
+        <div>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="/acad.html">Formação e Experiências</a></li>
+                <li><a href="/portifolio.html">Portifólio</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <!-- Imagem de fundo do cabeçalho -->
+        <img class="hero_background" src="img/tec-foto.png" alt="Imagem de fundo">
+        <div class="hero_foreground">
+            <!-- Título principal -->
+            <h1 class="hero_title">Contato</h1>
+            <hr>
+            <!-- Texto descritivo -->
+            <p class="hero_text">Fale Comigo</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <!-- Container do formulário -->
+            <div class="form-container">
+                <div>
+                    <!-- Título da seção -->
+                    <h1 class="section_title tex-form">Preencha o formulário:</h1>
+                </div>
+                <!-- Formulário de contato -->
+                <form>
+                    <div>
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <br>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email"><strong>Email:</strong></label>
+                        <br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="msg"><strong>Deixe sua mensagem aqui:</strong></label>
+                        <br>
+                        <!-- Campo para mensagem -->
+                        <textarea name="msg" id="msg" required></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <!-- Botão de envio -->
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Rodapé do site -->
+        <div>
+            <p>&copy; 2024 Deyvid da Costa Lucas - RU: 4876906</p>
+            <!-- Links para redes sociais com ícones -->
+            <a href="https://www.linkedin.com/in/deyvid-lucas/" target="_blank">
+                <img src="/img/linkedin-logo.png" alt="LinkedIn logo">
+                <p>LinkedIn</p>
+            </a>
+            <a href="https://github.com/deyvilucas" target="_blank">
+                <img src="/img/github-logo.png" alt="Github logo">
+                <p>Github</p>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

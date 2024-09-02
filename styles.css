@@ -1,0 +1,256 @@
+/* Reseta margens e preenchimentos padrão e define box-sizing para border-box */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis de cores e configuração de texto centralizado */
+:root {
+    --color-background: #000000; /* Cor de fundo principal */
+    --color-white:  #ffffff; /* Cor branca */
+    --color-darkblue: #15131e; /* Cor azul escuro */
+    --color-text: #120d23; /* Cor do texto */
+    --color-black: #000000; /* Cor preta */
+    text-align: center; /* Centraliza o texto em elementos */
+}
+
+body {
+    background-color: var(--color-background); /* Define cor de fundo para o corpo */
+    color: var(--color-white); /* Define cor do texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+}
+
+/* Estiliza itens de lista como blocos inline */
+li {
+    display: inline-block;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+/* Estilo da seção hero */
+.hero {
+    position: relative;
+    height: 50vh; /* Altura da seção hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem de fundo */
+    z-index: -1;
+    opacity: 0.7; /* Define a opacidade da imagem de fundo */
+}
+
+.hero_foreground {
+    background-color: #00000083; /* Cor de fundo semi-transparente */
+    border-radius: 20%;
+    border: solid 2rem #00000083; /* Borda arredondada e semi-transparente */
+}
+
+.hero_title {
+    font-size: 4.0rem; /* Tamanho da fonte do título */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte específica */
+}
+
+.hero_text {
+    font-size: 2.0rem; /* Tamanho da fonte do texto */
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte específica */
+}
+
+div > hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; /* Espaçamento vertical das linhas horizontais */
+}
+
+main {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--color-darkblue); /* Cor de fundo da seção principal */
+    color: var(--color-white); /* Cor do texto */
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: var(--color-black); /* Cor de fundo do menu de navegação */
+    font-size: 1.5rem; /* Tamanho da fonte do menu */
+    border-bottom: solid white; /* Borda inferior branca */
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+li {
+    border-right: solid white; /* Borda direita branca */
+    border-left: solid white; /* Borda esquerda branca */
+    border-radius: 20%; /* Bordas arredondadas */
+}
+
+nav a:hover {
+    color: rgba(0, 0, 255, 0.629); /* Cor do texto ao passar o mouse */
+    border: solid rgba(0, 0, 255, 0.123); /* Borda ao passar o mouse */
+    border-radius: 20%; /* Bordas arredondadas */
+}
+
+nav a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: solid white; /* Borda superior branca */
+    background-color: var(--color-black); /* Cor de fundo do rodapé */
+    margin-bottom: 0;
+    padding: 1rem 1rem;
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+footer div a img {
+    height: 4rem;
+    width: 4rem;
+    vertical-align: middle; /* Alinha verticalmente as imagens */
+}
+
+footer > div p,
+footer > div a {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    color: var(--color-white); /* Cor do texto e links no rodapé */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+section {
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte para seções */
+}
+
+.section_title {
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Tamanho da fonte do título da seção */
+}
+
+.section_subtitle {
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Tamanho da fonte do subtítulo da seção */
+}
+
+.section_text {
+    font-size: 1rem; /* Tamanho da fonte do texto da seção */
+}
+
+.div_acad {
+    border: solid var(--color-white); /* Borda branca */
+    margin-bottom: 2rem; /* Margem inferior */
+}
+
+.div_acad p {
+   padding: 1.5rem; /* Preenchimento interno das divs de acadêmico */
+}
+
+form {
+    border: solid var(--color-white); /* Borda branca do formulário */
+    width: 100%;
+    background-color: var(--color-background); /* Cor de fundo do formulário */
+    padding: 1rem; /* Preenchimento interno do formulário */
+}
+
+textarea {
+    width: 20rem; 
+    height: 10rem; /* Dimensões da área de texto */
+}
+
+.form-container {
+    display: flex;
+    text-align: center;
+    padding: 0rem 1rem 1rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+input, textarea {
+    background-color: var(--color-background); /* Cor de fundo dos campos de entrada */
+    color: var(--color-white); /* Cor do texto nos campos */
+    border: solid var(--color-white); /* Borda branca */
+    font-size: 1.5rem; /* Tamanho da fonte dos campos */
+}
+
+button {
+    width: 10rem;
+    height: 4rem;
+    background-color: var(--color-background); /* Cor de fundo do botão */
+    color: var(--color-white); /* Cor do texto do botão */
+    border: solid var(--color-white); /* Borda branca do botão */
+    border-radius: 20%; /* Bordas arredondadas do botão */
+    font-size: 1.5rem; /* Tamanho da fonte do botão */
+}
+
+button:hover {
+    background-color: var(--color-white); /* Cor de fundo do botão ao passar o mouse */
+    color: var(--color-black); /* Cor do texto do botão ao passar o mouse */
+}
+
+.projects {
+    border: solid var(--color-white); /* Borda branca dos projetos */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Organiza os projetos em coluna */
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center; /* Alinha os itens ao centro */
+}
+
+.projects > img {
+    width: 50%; /* Largura das imagens dos projetos */
+    align-items: center; /* Alinha as imagens ao centro */
+}
+
+.projects > a {
+    color: var(--color-white); /* Cor do texto dos links dos projetos */
+    border: solid var(--color-white); /* Borda branca dos links */
+    padding: 1rem;
+    background-color: var(--color-darkblue); /* Cor de fundo dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.projects > a:hover {
+    color: var(--color-darkblue); /* Cor do texto ao passar o mouse */
+    border: solid var(--color-white); /* Borda ao passar o mouse */
+    padding: 1rem;
+    background-color: var(--color-white); /* Cor de fundo ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 3rem; /* Tamanho da fonte do título em telas menores */
+    }
+    
+    .hero_text {
+        font-size: 1.5rem; /* Tamanho da fonte do texto em telas menores */
+    }
+
+    form div > input {
+        font-size: 1rem; /* Tamanho da fonte dos campos de entrada em telas menores */
+    }
+
+    textarea {
+        width: 10rem; /* Largura da área de texto em telas menores */
+    }
+}
